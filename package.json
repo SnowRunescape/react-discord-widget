@@ -16,6 +16,7 @@
     "package-release": "npm run build && npm publish"
   },
   "devDependencies": {
-    "@types/react": "^18.2.34"
+    "@types/react": "^18.2.34",
+    "typescript": "^5.2.2"
   }
 }
