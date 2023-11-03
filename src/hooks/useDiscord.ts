@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useState } from "react";
-import { Server } from './types'
 
 const useDiscord = (props: DiscordType) => {
   const {
@@ -34,11 +33,15 @@ const useDiscord = (props: DiscordType) => {
   };
 
   useEffect(() => {
+    if (!id) {
+      return;
+    }
+
     fetchDiscordWidgetData();
   }, [fetchDiscordWidgetData]);
 
   useEffect(() => {
-    if (delay < 1) {
+    if (!id || delay < 1) {
       return;
     }
 
@@ -52,7 +55,7 @@ const useDiscord = (props: DiscordType) => {
   }, [delay, fetchDiscordWidgetData]);
 
   return {
-    isLoading: isLoading,
+    isLoading,
     error,
     data,
     refetch: fetchDiscordWidgetData,
