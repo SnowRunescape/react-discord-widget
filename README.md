@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# React Discord Widget
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Version](https://img.shields.io/badge/version-1.0.7-brightgreen.svg)](https://github.com/SnowRunescape/react-discord-widget)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/SnowRunescape/react-discord-widget/blob/main/LICENSE)
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+`react-discord-widget` is a React component for integrating a Discord widget into your web application. It allows you to display information about your Discord server, such as the number of online members and an invite link, in a customizable and user-friendly way.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To use `react-discord-widget` in your React project, you can install it via npm:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+npm install react-discord-widget
+```
 
-### `npm test`
+## Usage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Here's how you can use the `react-discord-widget` component in your React application:
 
-### `npm run build`
+```javascript
+import React from 'react';
+import Discord from 'react-discord-widget';
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+function App() {
+  return (
+    <div>
+      <h1>My Awesome Discord Server</h1>
+      <Discord serverId="YOUR_SERVER_ID" />
+    </div>
+  );
+}
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+export default App;
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Make sure to replace `"YOUR_SERVER_ID"` with the actual ID of your Discord server.
 
-### `npm run eject`
+## Configuration
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+You can customize the appearance and behavior of the widget by passing additional props to the `DiscordWidget` component. For example:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```javascript
+<DiscordWidget
+  serverId="YOUR_SERVER_ID"
+  width={300}
+  height={400}
+  theme="dark"
+  showMembers={true}
+  showOnline={true}
+  showJoinButton={true}
+/>
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## License
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This project is licensed under the [MIT License](https://github.com/SnowRunescape/react-discord-widget/blob/main/LICENSE). Feel free to use and modify it as you see fit.
 
-## Learn More
+## Repository
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Please report any issues or suggestions on the repository's issue tracker.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to use and enjoy the `react-discord-widget` component in your web applications! If you have any questions or need assistance, don't hesitate to reach out or open an issue on the GitHub repository.

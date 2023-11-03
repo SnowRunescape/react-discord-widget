@@ -8,9 +8,10 @@
     "strict": true,
     "strictFunctionTypes": true,
     "target": "ES2022",
-    "baseUrl": "./src",
+    "baseUrl": ".",
 
     "jsx": "react-jsx",
+    "rootDir": "src"
   },
   "exclude": [
     "src",
