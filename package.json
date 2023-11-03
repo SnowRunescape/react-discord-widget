@@ -1,0 +1,15 @@
+{
+  "name": "discord-embed",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "types": "index.d.ts",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SnowRunescape/discord-embed"
+  },
+  "scripts": {
+    "build": "tsc && tsc-alias",
+    "package-release": "npm run build && npm publish"
+  }
+}
