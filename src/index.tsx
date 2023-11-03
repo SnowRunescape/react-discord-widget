@@ -1,5 +1,5 @@
-import Discord from './components/Discord'
-import useDiscord from './hooks/useDiscord';
+import Discord from '@Discord/components/Discord'
+import useDiscord from '@Discord/hooks/useDiscord';
 
 export {
   Discord,

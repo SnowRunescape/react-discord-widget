@@ -9,7 +9,11 @@
     "strictFunctionTypes": true,
     "target": "ES2022",
     "baseUrl": ".",
-
+    "paths": {
+      "@Discord/*": [
+        "./src/*"
+      ],
+    },
     "jsx": "react-jsx",
     "rootDir": "src"
   },

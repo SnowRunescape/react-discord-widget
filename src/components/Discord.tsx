@@ -1,20 +1,17 @@
-import useDiscord from '../hooks/useDiscord';
+import DarkTheme from '@Discord/themes/DarkTheme';
+import LightTheme from '@Discord/themes/LightTheme';
 
 function Discord(props: DiscordType) {
-  const { data } = useDiscord(props);
+  const {
+    theme = "dark"
+  } = props;
 
-  return (
-    <div>
-      {data ? (
-        <div>
-          <h1>Discord Widget Data</h1>
-          <pre>{JSON.stringify(data, null, 2)}</pre>
-        </div>
-      ) : (
-        <p>Loading data...</p>
-      )}
-    </div>
-  );
+  const Themes = {
+    dark: <DarkTheme {...props} />,
+    light: <LightTheme {...props} />,
+  }
+
+  return Themes[theme];
 }
 
 export default Discord;
