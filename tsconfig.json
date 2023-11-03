@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "outDir": "build",
+    "skipLibCheck": true,
+    "strict": true,
+    "strictFunctionTypes": true,
+    "target": "ES2022",
+    "baseUrl": ".",
+
+    "jsx": "react-jsx",
+  },
+  "exclude": [
+    "src",
+    "node_modules"
+  ]
+}
