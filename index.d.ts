@@ -1,7 +1,10 @@
-import { Discord } from './src'
+import { Discord, useDiscord } from './src'
 
 declare module "react-discord-widget" {
-  export { Discord };
+  export {
+    Discord,
+    useDiscord
+  };
 }
 
 declare global {
