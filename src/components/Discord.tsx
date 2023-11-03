@@ -1,7 +1,18 @@
-const Discord = () => {
+import useDiscord from '../hooks/useDiscord';
+
+function Discord(props: DiscordType) {
+  const { data } = useDiscord(props);
+
   return (
     <div>
-      DISCOARD :D
+      {data ? (
+        <div>
+          <h1>Discord Widget Data</h1>
+          <pre>{JSON.stringify(data, null, 2)}</pre>
+        </div>
+      ) : (
+        <p>Loading data...</p>
+      )}
     </div>
   );
 }

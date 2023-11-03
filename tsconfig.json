@@ -8,7 +8,7 @@
     "strict": true,
     "strictFunctionTypes": true,
     "target": "ES2022",
-    "baseUrl": ".",
+    "baseUrl": "./src",
 
     "jsx": "react-jsx",
   },
