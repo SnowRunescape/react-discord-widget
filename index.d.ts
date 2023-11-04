@@ -31,9 +31,15 @@ declare module "react-discord-widget" {
 
   type DiscordType = {
     id: string,
+    delay?: number,
+  }
+
+  export type DiscordProps = {
+    id: string,
     theme?: "light" | "dark",
     delay?: number,
     showJoinButton?: boolean,
+    height?: number,
   }
 
   export const useDiscord: (props: DiscordType) => {

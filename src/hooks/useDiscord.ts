@@ -1,3 +1,4 @@
+import { fetchDiscordWidget } from "@Discord/services/discord";
 import { useCallback, useEffect, useState } from "react";
 
 const useDiscord = (props: DiscordType) => {
@@ -12,7 +13,7 @@ const useDiscord = (props: DiscordType) => {
 
   const fetchDiscordWidgetData = useCallback(async () => {
     try {
-      const response = await fetch(`https://discord.com/api/guilds/${id}/widget.json`);
+      const response = await fetchDiscordWidget(id);
 
       if (response.ok) {
         const data = await response.json();

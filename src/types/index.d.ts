@@ -30,7 +30,5 @@ interface Server {
 
 type DiscordType = {
   id: string,
-  theme?: "light" | "dark",
   delay?: number,
-  showJoinButton?: boolean,
 }
