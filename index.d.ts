@@ -1,22 +1,6 @@
 import { Discord } from './src'
 
 declare module "react-discord-widget" {
-
-  export const useDiscord: (props: DiscordType) => {
-    isLoading: boolean,
-    error: any,
-    data: Server | null,
-    refetch: () => Promise<void>,
-    remove: () => void,
-    delay: number,
-  },
-
-  export {
-    Discord,
-  };
-}
-
-declare global {
   interface Channel {
     id: string,
     name: string,
@@ -51,4 +35,17 @@ declare global {
     delay?: number,
     showJoinButton?: boolean,
   }
+
+  export const useDiscord: (props: DiscordType) => {
+    isLoading: boolean,
+    error: any,
+    data: Server | null,
+    refetch: () => Promise<void>,
+    remove: () => void,
+    delay: number,
+  }
+
+  export {
+    Discord,
+  };
 }
