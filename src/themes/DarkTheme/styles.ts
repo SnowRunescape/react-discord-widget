@@ -1,5 +1,10 @@
-const styles = {
+const styles: {
+  [key: string]: React.CSSProperties;
+} = {
   widget: {
+    display: 'flex',
+    flexDirection: 'column',
+    flex: 1,
     fontSize: 14,
     borderRadius: 5,
     overflow: 'hidden',
@@ -13,8 +18,17 @@ const styles = {
     color: '#ffffff',
   },
   body: {
+    flex: 1,
     backgroundColor: '#1e1f22',
     padding: 20,
+  },
+  member: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: 4,
+    paddingLeft: 10,
+    margin: '6px 0',
+    color: '#8a8e94',
   },
   footer: {
     display: 'flex',
