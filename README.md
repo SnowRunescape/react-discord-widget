@@ -15,6 +15,14 @@
 - Configurable via simple props
 - TypeScript support for strong typing
 
+## Quick Links
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Generate Your Own Style](#generate-your-own-style)
+- [License](#license)
+- [Contributing](#contributing)
+  
 ## Installation
 
 ```bash
