@@ -8,7 +8,6 @@ const StyledDiscord = styled.div<StyledDiscordProps>`
   height: ${props => props.height ?? 420}px;
   display: flex;
   flex-direction: column;
-  flex: 1;
 
   .header {
     display: flex;
@@ -40,11 +39,11 @@ const StyledDiscord = styled.div<StyledDiscordProps>`
       }
     }
 
-    ::-webkit-scrollbar {
+    &::-webkit-scrollbar {
       width: 12px;
     }
 
-    ::-webkit-scrollbar-thumb {
+    &::-webkit-scrollbar-thumb {
       background-color: #353639;
     }
   }
