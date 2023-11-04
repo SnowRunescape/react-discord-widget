@@ -1,6 +1,6 @@
 # React Discord Widget
 
-[![Version](https://img.shields.io/badge/version-1.0.7-brightgreen.svg)](https://github.com/SnowRunescape/react-discord-widget)
+[![Version](https://img.shields.io/github/package-json/v/SnowRunescape/react-discord-widget)](https://github.com/SnowRunescape/react-discord-widget/releases)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/SnowRunescape/react-discord-widget/blob/main/LICENSE)
 
 ## Overview
