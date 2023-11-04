@@ -23,6 +23,7 @@ const StyledDiscord = styled.div<StyledDiscordProps>`
     background-color: #1e1f22;
     padding: 20px;
     flex: 1;
+    overflow-y: scroll;
 
     .member {
       display: flex;
@@ -37,6 +38,14 @@ const StyledDiscord = styled.div<StyledDiscordProps>`
         height: 16px;
         border-radius: 8px;
       }
+    }
+
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #353639;
     }
   }
 
