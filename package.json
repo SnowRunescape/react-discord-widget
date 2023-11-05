@@ -1,6 +1,6 @@
 {
   "name": "react-discord-widget",
-  "version": "1.0.21",
+  "version": "1.1.0",
   "license": "MIT",
   "main": "build/index.js",
   "repository": {
