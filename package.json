@@ -3,6 +3,7 @@
   "version": "1.1.0",
   "license": "MIT",
   "main": "build/index.js",
+  "homepage": "https://snowrunescape.github.io/react-discord-widget/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SnowRunescape/react-discord-widget"
@@ -13,6 +14,8 @@
     "styled-components": "^6.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build-storybook",
+    "deploy": "gh-pages -d storybook-static",
     "build": "tsc && tsc-alias",
     "package-release": "npm run build && npm publish",
     "storybook": "storybook dev -p 6006",
@@ -32,6 +35,7 @@
     "@storybook/react-vite": "^7.5.2",
     "@storybook/testing-library": "^0.2.2",
     "@types/react": "^18.2.34",
+    "gh-pages": "^6.0.0",
     "storybook": "^7.5.2",
     "tsc-alias": "^1.8.8",
     "typescript": "^5.2.2",
