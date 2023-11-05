@@ -1,20 +1,23 @@
+import { statusClass } from "./constants";
 import { MemberProps } from "./types";
 
 const Member = (props: MemberProps) => {
-  const { id, username, avatar_url, game } = props.member;
+  const { member } = props;
 
   return (
-    <div key={id} className="member">
-      <div>
-        <img src={avatar_url} alt={username} />
+    <div className="member">
+      <div className="memberAvatar">
+        <img src={member.avatar_url} alt={member.username} />
+
+        <span className={`memberStatus ${statusClass[member.status]}`} />
       </div>
 
       <span className="memberName">
-        {username}
+        {member.username}
       </span>
 
-      {game && <span className="memberGame">
-        {game.name}
+      {member.game && <span className="memberGame">
+        {member.game.name}
       </span>}
     </div>
   );

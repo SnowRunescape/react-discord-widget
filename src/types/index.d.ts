@@ -15,7 +15,7 @@ interface Member {
   username: string,
   discriminator: string,
   avatar: string | null,
-  status: string,
+  status: "online" | "idle" | "dnd" | "streaming",
   avatar_url: string,
   game?: Game,
 }

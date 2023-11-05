@@ -44,6 +44,38 @@ const StyledDiscord = styled.div<StyledDiscordProps>`
       padding-left: 10px;
       margin: 6px 0px;
 
+      .memberAvatar {
+        width: 16px;
+        height: 16px;
+        position: relative;
+        margin-right: 4px;
+
+        .memberStatus {
+          width: 6px;
+          height: 6px;
+          border-radius: 3px;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+
+          &.memberStatusOnline {
+            background-color: #24934f;
+          }
+
+          &.memberStatusdle {
+            background-color: #af7615;
+          }
+
+          &.memberStatusDnd {
+            background-color: #da373c;
+          }
+
+          &.memberStatusStreaming {
+            background-color: #593695;
+          }
+        }
+      }
+
       .memberName {
         flex: 1;
         color: #8a8e94;
