@@ -24,5 +24,12 @@
     "@types/react": "^18.2.34",
     "tsc-alias": "^1.8.8",
     "typescript": "^5.2.2"
-  }
+  },
+  "keywords": [
+    "react",
+    "component",
+    "discord",
+    "embed",
+    "widget"
+  ]
 }
