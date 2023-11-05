@@ -1,11 +1,25 @@
-import Discord from "@Discord/components/Discord";
+import type { Meta, StoryObj } from '@storybook/react';
+import Discord from '@Discord/components/Discord';
 
-export default {
-  title: "Discord",
+const meta: Meta<typeof Discord> = {
+  component: Discord,
 };
 
-export const Widget = () => (
-  <div style={{ width: 420 }}>
-    <Discord id="451861943364616192" />
-  </div>
-);
+type Story = StoryObj<typeof Discord>;
+
+export const Widget: Story = {
+  parameters: {
+    layout: 'centered',
+  },
+  decorators: [(StoryComponent: React.ComponentType) => (
+    <div style={{ width: 420 }}>
+      <StoryComponent />
+    </div>
+  )],
+  args: {
+    id: '451861943364616192',
+    theme: 'dark',
+  },
+};
+
+export default meta;
