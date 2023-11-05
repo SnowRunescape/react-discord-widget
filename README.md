@@ -15,6 +15,9 @@
 - Configurable via simple props
 - TypeScript support for strong typing
 
+## Example of usage
+<img src="example.png" alt="Example Image" width="400" height="400"> <!-- Adjust the width and height as needed -->
+
 ## Quick Links
 
 - [Installation](#installation)
