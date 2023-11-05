@@ -9,11 +9,11 @@ const Member = (props: MemberProps) => {
         <img src={avatar_url} alt={username} />
       </div>
 
-      <span>
+      <span className="memberName">
         {username}
       </span>
 
-      {game && <span>
+      {game && <span className="memberGame">
         {game.name}
       </span>}
     </div>

@@ -31,13 +31,12 @@ const StyledDiscord = styled.div<StyledDiscordProps>`
       padding-left: 10px;
       margin: 6px 0px;
 
-
-      .name {
+      .memberName {
         flex: 1;
         color: #8a8e94;
       }
 
-      .game {
+      .memberGame {
         flex: 1;
         text-align: right;
         color: #4e5058;
