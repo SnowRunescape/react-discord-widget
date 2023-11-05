@@ -15,8 +15,7 @@
     "styled-components": "^6.1.0"
   },
   "scripts": {
-    "predeploy": "npm run build-storybook",
-    "deploy": "gh-pages -d storybook-static",
+    "deploy": "storybook-to-ghpages",
     "build": "tsc && tsc-alias",
     "package-release": "npm run build && npm publish",
     "storybook": "storybook dev -p 6006",
@@ -34,9 +33,9 @@
     "@storybook/blocks": "^7.5.2",
     "@storybook/react": "^7.5.2",
     "@storybook/react-vite": "^7.5.2",
+    "@storybook/storybook-deployer": "^2.8.16",
     "@storybook/testing-library": "^0.2.2",
     "@types/react": "^18.2.34",
-    "gh-pages": "^6.0.0",
     "storybook": "^7.5.2",
     "tsc-alias": "^1.8.8",
     "typescript": "^5.2.2",
