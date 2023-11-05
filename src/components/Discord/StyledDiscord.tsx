@@ -53,6 +53,9 @@ const StyledDiscord = styled.div<StyledDiscordProps>`
         flex: 1;
         text-align: right;
         color: #4e5058;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
       }
 
       img {
