@@ -5,7 +5,7 @@
 
 ## Overview
 
-`react-discord-widget` is a React component library designed to seamlessly integrate Discord server information into your web application. Display the online member count, server channels, and a quick join button with ease, while also offering a customizable interface for a more personal touch.
+`react-discord-widget` is a React component library designed to seamlessly integrate <a href="https://discord.com" target="_blank">Discord</a> server information into your web application. Display the online member count, server channels, and a quick join button with ease, while also offering a customizable interface for a more personal touch.
 
 ## Features
 
@@ -22,7 +22,7 @@
 - [Generate Your Own Style](#generate-your-own-style)
 - [License](#license)
 - [Contributing](#contributing)
-  
+
 ## Installation
 
 ```bash
@@ -85,7 +85,10 @@ The hook returns an object containing:
 ### Usage Example
 
 ```jsx
-const discordInfo = useDiscord({ id: 'YOUR_SERVER_ID', delay: 120 });
+const discordInfo = useDiscord({
+  id: 'YOUR_SERVER_ID',
+  delay: 120
+});
 ```
 
 Here's how you would typically use useDiscord within a functional component:
@@ -94,7 +97,9 @@ import React from 'react';
 import { useDiscord } from 'react-discord-widget';
 
 function DiscordComponent() {
-  const { isLoading, data, error, refetch } = useDiscord({ id: 'YOUR_SERVER_ID' });
+  const { isLoading, data, error, refetch } = useDiscord({
+    id: 'YOUR_SERVER_ID'
+  });
 
   if (isLoading) {
     return <div>Loading...</div>;
@@ -119,9 +124,9 @@ function DiscordComponent() {
 ```
 
 ## License
-This project is licensed under the [MIT License](https://github.com/SnowRunescape/react-discord-widget/blob/main/LICENSE). Feel free to use and modify it as you see fit.
+This project is licensed under the [MIT License](https://github.com/SnowRunescape/react-discord-widget/blob/master/LICENSE). Feel free to use and modify it as you see fit.
 
 ## Contributing
 Please report any issues or suggestions on the repository's issue tracker.
 
-Feel free to use and enjoy the react-discord-widget component in your web applications! If you have any questions or need assistance, don't hesitate to reach out or open an issue on the GitHub repository.
+Feel free to use and enjoy the `react-discord-widget` component in your web applications! If you have any questions or need assistance, don't hesitate to reach out or open an issue on the GitHub repository.
