@@ -1,5 +1,5 @@
 import useDiscord from '@Discord/hooks/useDiscord';
-import Channel from '@Discord/components/channel';
+import Channel from '@Discord/components/Channel';
 import Member from '@Discord/components/Member';
 import DiscordLogo from '@Discord/components/DiscordLogo';
 import StyledDiscord from './StyledDiscord';
