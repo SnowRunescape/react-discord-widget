@@ -1,5 +1,6 @@
 {
   "name": "react-discord-widget",
+  "description": "Discord widget as React components",
   "version": "1.1.0",
   "license": "MIT",
   "main": "build/index.js",
