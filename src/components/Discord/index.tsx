@@ -1,4 +1,5 @@
 import useDiscord from '@Discord/hooks/useDiscord';
+import Channel from '@Discord/components/Channel';
 import Member from '@Discord/components/Member';
 import StyledDiscord from './StyledDiscord';
 import { DiscordProps } from './types';
@@ -20,7 +21,11 @@ const Discord = (props: DiscordProps) => {
       </div>
 
       <div className="body">
-        <div>MEMBERS ONLINE</div>
+        {data?.channels && <div>
+          {data.channels.map(channel => <Channel key={channel.id} channel={channel} />)}
+        </div>}
+
+        <div className="memberOnlines">MEMBERS ONLINE</div>
 
         <div>
           {data?.members && data?.members.map(member => <Member key={member.id} member={member} />)}

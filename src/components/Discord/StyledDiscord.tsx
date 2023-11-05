@@ -2,7 +2,10 @@ import styled from 'styled-components';
 import { StyledDiscordProps } from './types';
 
 const StyledDiscord = styled.div<StyledDiscordProps>`
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
   font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
   border-radius: 5px;
   overflow: hidden;
   height: ${props => props.height ?? 420}px;
@@ -23,6 +26,16 @@ const StyledDiscord = styled.div<StyledDiscordProps>`
     padding: 20px;
     flex: 1;
     overflow-y: scroll;
+
+    .channelName {
+      font-size: 18px;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .memberOnlines {
+      color: #8a8e94;
+    }
 
     .member {
       display: flex;
@@ -83,6 +96,7 @@ const StyledDiscord = styled.div<StyledDiscordProps>`
       border: 1px solid #212325;
       border-radius: 4px;
       color: #ffffff;
+      text-decoration: none;
 
       &:hover {
         opacity: .6;
