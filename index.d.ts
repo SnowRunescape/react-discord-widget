@@ -1,5 +1,3 @@
-import { Discord } from './src'
-
 declare module "react-discord-widget" {
   interface Channel {
     id: string,
@@ -50,8 +48,5 @@ declare module "react-discord-widget" {
     remove: () => void,
     delay: number,
   }
-
-  export {
-    Discord,
-  };
+  export const Discord = (props: DiscordProps) => JSX.Element;
 }
