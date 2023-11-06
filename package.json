@@ -1,7 +1,7 @@
 {
   "name": "react-discord-widget",
   "description": "Discord widget as React components",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "license": "MIT",
   "main": "build/index.js",
   "homepage": "https://snowrunescape.github.io/react-discord-widget/",
@@ -9,9 +9,10 @@
     "type": "git",
     "url": "git+https://github.com/SnowRunescape/react-discord-widget"
   },
+  "peerDependencies": {
+    "react": ">=17"
+  },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "styled-components": "^6.1.0"
   },
   "scripts": {
@@ -26,6 +27,8 @@
     "index.d.ts"
   ],
   "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "@storybook/addon-essentials": "^7.5.2",
     "@storybook/addon-interactions": "^7.5.2",
     "@storybook/addon-links": "^7.5.2",
