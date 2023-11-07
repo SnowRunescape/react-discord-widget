@@ -11,6 +11,7 @@ const StyledDiscord = styled.div<StyledDiscordProps>`
   height: ${props => props.height ?? 420}px;
   display: flex;
   flex-direction: column;
+  text-align: left;
 
   .header {
     display: flex;
@@ -132,6 +133,8 @@ const StyledDiscord = styled.div<StyledDiscordProps>`
       border-radius: 4px;
       color: #ffffff;
       text-decoration: none;
+      font-weight: normal;
+      font-size: 14px;
 
       &:hover {
         opacity: .6;
