@@ -10,7 +10,7 @@
     "url": "git+https://github.com/SnowRunescape/react-discord-widget"
   },
   "peerDependencies": {
-    "react": ">=17"
+    "react": ">=16"
   },
   "dependencies": {
     "styled-components": "^6.1.0"
