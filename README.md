@@ -3,6 +3,10 @@
 [![Version](https://img.shields.io/github/package-json/v/SnowRunescape/react-discord-widget)](https://github.com/SnowRunescape/react-discord-widget/releases)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/SnowRunescape/react-discord-widget/blob/main/LICENSE)
 
+## Demo
+
+**[Storybook / Live Demo](https://snowrunescape.github.io/react-discord-widget/)**
+
 ## Overview
 
 `react-discord-widget` is a React component library designed to seamlessly integrate <a href="https://discord.com" target="_blank">Discord</a> server information into your web application. Display the online member count, server channels, and a quick join button with ease, while also offering a customizable interface for a more personal touch.
