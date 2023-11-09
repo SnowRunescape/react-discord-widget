@@ -63,7 +63,7 @@ const StyledDiscord = styled.div<StyledDiscordProps>`
             background-color: #24934f;
           }
 
-          &.memberStatusdle {
+          &.memberStatusIdle {
             background-color: #af7615;
           }
 
